@@ -48,7 +48,7 @@ const NavLink = ({ children, path }: { children: ReactNode; path: string }) => (
     fontSize={"navlinksFS"}
     fontWeight={"navlinksFW"}
     fontFamily={"poppins"}
-    color={"primaryColor"}
+    color={"red"}
     rounded={"none"}
     _hover={{
       textDecoration: "",
@@ -107,7 +107,7 @@ export default function Navbar () {
                 size={"sm"}
                 fontWeight={"bold"}
                 name="Jonathan Adeola"
-                bg={"red"}
+                bg={"#17E4A1"}
               />
               <Text ms={3} display={{ base: "none", md: "block" }} lineHeight={"profileLH"} fontFamily={"heading"} fontSize={"profileFS"} fontWeight={"navlinksFW"} color={"profileNameColor"}>Jonathan </Text>
               <DownIcon />
