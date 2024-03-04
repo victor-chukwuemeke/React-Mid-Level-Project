@@ -45,8 +45,8 @@ export const PdfIcon = createIcon({
 
   const MyCard = ({ isChecked }: { isChecked: boolean }) => {
     return (
-      <Flex flexWrap='wrap' borderRadius={"10px"} gap='24px' justifyContent='between' mb={5}>
-        <Box mx={{base:9, md:0}} zIndex={100} w={{base:"250px" , lg:"250px"}} height="280px" boxShadow={"md"} border={"1px solid #F2F2F2"} borderRadius={"10px"} mt={9} mb={{lg:9}} pos={"relative"}>
+      <Flex flexWrap='wrap' borderRadius={"10px"} gap='24px' justifyContent={{base:'center', md:'between'}} mb={5}>
+        <Box mx={{base:0, md:0}} zIndex={100} w={{base:"250px" , lg:"250px"}} height="280px" boxShadow={"md"} border={"1px solid #F2F2F2"} borderRadius={"10px"} mt={9} mb={{sm:-9,lg:9}} pos={"relative"}>
           <Box top={"-63px"} borderRadius={"10px"} left={"34px"} width={"100%"} height={"200px"} pos={"absolute"} bgImage={backgroundimage} bgPosition="center" bgRepeat="no-repeat">
           </Box>
           <Box>
@@ -67,7 +67,7 @@ export const PdfIcon = createIcon({
               </Flex>
           </Box>
         </Box>
-        <Box mx={{base:9, md:0}} w={{base:"250px" , lg:"250px"}} boxShadow={"md"} height="280px" border={"1px solid #F2F2F2"} borderRadius={"10px"}  mt={{md:9}} pos={"relative"}>
+        <Box mx={{base:0, md:0}} w={{base:"250px" , lg:"250px"}} boxShadow={"md"} height="280px" border={"1px solid #F2F2F2"} borderRadius={"10px"}  mt={{sm:9}} pos={"relative"}>
           <Box top={"-44px"} borderRadius={"10px"} left={"0px"} width={"100%"} height={"200px"} pos={"absolute"} bgImage={backgroundimage3} bgPosition="center" bgRepeat="no-repeat">
           </Box>
           <Box>
@@ -88,7 +88,7 @@ export const PdfIcon = createIcon({
               </Flex>
           </Box>
         </Box>
-        <Box mx={{base:9, md:0}} w={{base:"250px" , lg:"250px"}} boxShadow={"md"} height="280px" border={"1px solid #F2F2F2"} borderRadius={"10px"} mt={{lg:9,}} pos={"relative"}>
+        <Box mx={{base:0, md:0}} w={{base:"250px" , lg:"250px"}} boxShadow={"md"} height="280px" border={"1px solid #F2F2F2"} borderRadius={"10px"} mt={{lg:9,}} pos={"relative"}>
           <Box top={"-63px"} borderRadius={"10px"} left={"34px"} width={"100%"} height={"200px"} pos={"absolute"} bgImage={backgroundimage} bgPosition="center" bgRepeat="no-repeat">
           </Box>
           <Box>
@@ -109,7 +109,7 @@ export const PdfIcon = createIcon({
               </Flex>
           </Box>
         </Box>
-        <Box mx={{base:9, md:0}} w={{base:"250px" , lg:"250px"}} boxShadow={"md"} height="280px" border={"1px solid #F2F2F2"} borderRadius={"10px"} mt={{lg:9, xl:0}} pos={"relative"}>
+        <Box mx={{base:0, md:0}} w={{base:"250px" , lg:"250px"}} boxShadow={"md"} height="280px" border={"1px solid #F2F2F2"} borderRadius={"10px"} mt={{lg:9, xl:0}} pos={"relative"}>
           <Box top={"-44px"} borderRadius={"10px"} left={"0px"} width={"100%"} height={"200px"} pos={"absolute"} bgImage={backgroundimage2} bgPosition="center" bgRepeat="no-repeat">
           </Box>
           <Box>
@@ -130,7 +130,7 @@ export const PdfIcon = createIcon({
               </Flex>
           </Box>
         </Box>
-        <Box mx={{base:9, md:0}} w={{base:"250px" , lg:"250px"}} boxShadow={"md"} height="280px" border={"1px solid #F2F2F2"} borderRadius={"10px"} pos={"relative"}>
+        <Box mx={{base:0, md:0}} w={{base:"250px" , lg:"250px"}} boxShadow={"md"} height="280px" border={"1px solid #F2F2F2"} borderRadius={"10px"} pos={"relative"}>
           <Box top={"-53px"} borderRadius={"10px"} left={"0px"} width={"100%"} height={"200px"} pos={"absolute"} bgImage={backgroundimage4} bgPosition="center" bgRepeat="no-repeat">
           </Box>
           <Box>
@@ -151,7 +151,7 @@ export const PdfIcon = createIcon({
               </Flex>
           </Box>
         </Box>
-        <Box mx={{base:9, md:0}} w={{base:"250px" , lg:"250px"}} boxShadow={"md"} height="280px" border={"1px solid #F2F2F2"} borderRadius={"10px"} pos={"relative"}>
+        <Box mx={{base:0, md:0}} w={{base:"250px" , lg:"250px"}} boxShadow={"md"} height="280px" border={"1px solid #F2F2F2"} borderRadius={"10px"} pos={"relative"}>
           <Box top={"-42px"} borderRadius={"10px"} left={"29px"} width={"100%"} height={"200px"} pos={"absolute"} bgImage={backgroundimage5} bgPosition="center" bgRepeat="no-repeat">
           </Box>
           <Box>

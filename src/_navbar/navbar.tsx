@@ -1,5 +1,5 @@
 import { Avatar, Box, Button, Center, Divider, Flex, FormControl, FormLabel, HStack, Icon, IconButton, IconProps, Image, Link, Menu, MenuButton, MenuDivider, MenuItem, MenuList, Stack, Switch, Text, createIcon, useColorModeValue, useDisclosure } from "@chakra-ui/react";
-import React, { ReactNode } from "react";
+import React, { ReactNode, useState } from "react";
 import Logo from "../_assets/icons/logo.svg";
 import { CloseIcon} from "@chakra-ui/icons";
 
@@ -28,7 +28,7 @@ export const DownIcon = createIcon({
 const Links = [
   {
     name: "Dashboard",
-    path: "/",
+    path: "/dashboard",
   },
   {
     name: "Resources",
@@ -36,19 +36,22 @@ const Links = [
   },
   {
     name: "Toolkit",
-    path: "/",
+    path: "/toolkit",
   },
 ];
   
-const NavLink = ({ children, path }: { children: ReactNode; path: string }) => (
+const NavLink = ({ children, path }: { children: ReactNode; path: string }) => {
+  
+  return (
   <Box>
     <Link 
     px={2}
-    py={7}
+    py={{base:1, md:7}}
     fontSize={"navlinksFS"}
     fontWeight={"navlinksFW"}
     fontFamily={"poppins"}
-    color={"red"}
+    color={path === '/' ? "#314EF9":"primaryColor"}
+    borderBottom={path === '/' ? "2px solid #314EF9" : ''}
     rounded={"none"}
     _hover={{
       textDecoration: "",
@@ -60,7 +63,7 @@ const NavLink = ({ children, path }: { children: ReactNode; path: string }) => (
       {children}
     </Link>
   </Box>
-);
+)};
   
 export default function Navbar () {
   const { isOpen, onOpen, onClose } = useDisclosure();
