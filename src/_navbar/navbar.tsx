@@ -107,7 +107,7 @@ export default function Navbar () {
                 size={"sm"}
                 fontWeight={"bold"}
                 name="Jonathan Adeola"
-                bg={"#17E4A1"}
+                bg={"red"}
               />
               <Text ms={3} display={{ base: "none", md: "block" }} lineHeight={"profileLH"} fontFamily={"heading"} fontSize={"profileFS"} fontWeight={"navlinksFW"} color={"profileNameColor"}>Jonathan </Text>
               <DownIcon />
